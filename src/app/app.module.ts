@@ -9,13 +9,15 @@ import { HeroesComponent } from './pages/heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
 import { LayoutComponent } from './shared/layout/layout.component';
 import { HeroDetailComponent } from './pages/hero-detail/hero-detail.component';
+import { MessagesComponent } from './shared/components/messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     LayoutComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    MessagesComponent
   ],
   imports: [
     NgIf,
