@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+$myColor: #000;
+$myFont: Arial, Helvetica, sans-serif;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 16px;
+    font-family: $myFont;
+}

@@ -1,0 +1,29 @@
+@import "../../../styles.scss";
+
+.heros__container {
+    margin: 30px;
+
+    h2 {
+        font-size: 1.8rem;
+        padding: 20px 0;
+        color: $myColor;
+    }
+
+    @mixin info {
+        font-size: 1.6rem;
+        padding-bottom: 20px;
+        color: $myColor;
+    }
+
+    .heros__container-id {
+        @include info;
+        
+        span {
+           @include info;
+        }
+    }
+
+    .heros__container-name {
+        @include info;
+    }
+}
