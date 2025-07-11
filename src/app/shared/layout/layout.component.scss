@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    margin: 0 30px;
+
+    .container__sidebar {
+        flex: 1;
+    }
+
+    .container__product {
+        padding: 20px 0;
+        flex: 3;
+    }
+}
+

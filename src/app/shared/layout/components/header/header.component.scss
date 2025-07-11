@@ -1,0 +1,11 @@
+.header {
+    margin: 0 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+    .header__nav {
+        font-size: 1.4rem;
+        align-content: center;
+    }
+}

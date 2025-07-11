@@ -1,32 +1,25 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgIf, NgFor, UpperCasePipe,} from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './pages/heroes/heroes.component';
-import { FormsModule } from '@angular/forms';
-import { LayoutComponent } from './shared/layout/layout.component';
-import { HeroDetailComponent } from './pages/hero-detail/hero-detail.component';
-import { MessagesComponent } from './shared/components/messages/messages.component';
-
+import { LayoutModule } from './shared/layout/layout.module';
+import { DashboardModule } from './pages/p-heroes/dashboard/dashboard.module';
+import { SharedModule } from './shared/components/component.module';
+import { HeroesModule } from './pages/p-heroes/heroes/heroes.module';
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent,
-    LayoutComponent,
-    HeroDetailComponent,
-    MessagesComponent
   ],
   imports: [
-    NgIf,
-    NgFor,
-    UpperCasePipe,
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    CommonModule,
+    DashboardModule,
+    LayoutModule,
+    SharedModule,
+    HeroesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
